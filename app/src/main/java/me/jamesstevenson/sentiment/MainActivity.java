@@ -117,17 +117,27 @@ public class MainActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
 
+
+
                         // Here we set a flag to true if we are currently reading its file.
                         // and in turn enter the IF statement.
                         boolean war_correct = file.getName().equals("War_Results");
                         if (war_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             // Creates a text view for the speciifc keyword
                             TextView WarTextView = (TextView)findViewById(R.id.war_TW);
-                            WarTextView.setText(text.toString().replace("\n","")+"/100");
+                            WarTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
 
                             // Next we read the file and set the color of the text view depending on the number.
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     WarTextView.setTextColor(Color.GREEN);
                                 }else{
@@ -141,10 +151,19 @@ public class MainActivity extends AppCompatActivity {
 
                         boolean pol_correct = file.getName().equals("Politics_Results");
                         if (pol_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             TextView PolTextView = (TextView)findViewById(R.id.pol_TW);
-                            PolTextView.setText(text.toString().replace("\n","")+"/100");
+                            PolTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
+
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     PolTextView.setTextColor(Color.GREEN);
                                 }else{
@@ -157,11 +176,20 @@ public class MainActivity extends AppCompatActivity {
 
                         boolean mon_correct = file.getName().equals("Money_Results");
                         if (mon_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             TextView MonTextView = (TextView)findViewById(R.id.mon_TV);
-                            MonTextView.setText(text.toString().replace("\n","")+"/100");
+                            MonTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
+
 
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     MonTextView.setTextColor(Color.GREEN);
                                 }else{
@@ -173,11 +201,19 @@ public class MainActivity extends AppCompatActivity {
 
                         boolean fam_correct = file.getName().equals("Family_Results");
                         if (fam_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             TextView FamTextView = (TextView)findViewById(R.id.fam_TV);
-                            FamTextView.setText(text.toString().replace("\n","")+"/100");
+                            FamTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
 
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     FamTextView.setTextColor(Color.GREEN);
                                 }else{
@@ -189,11 +225,19 @@ public class MainActivity extends AppCompatActivity {
 
                         boolean coo_correct = file.getName().equals("Cooking_Results");
                         if (coo_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             TextView CooTextView = (TextView)findViewById(R.id.cooking_TV);
-                            CooTextView.setText(text.toString().replace("\n","")+"/100");
+                            CooTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
 
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     CooTextView.setTextColor(Color.GREEN);
                                 }else{
@@ -205,11 +249,19 @@ public class MainActivity extends AppCompatActivity {
 
                         boolean fas_correct = file.getName().equals("Fashion_Results");
                         if (fas_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             TextView FasTextView = (TextView)findViewById(R.id.fashion_TV);
-                            FasTextView.setText(text.toString().replace("\n","")+"/100");
+                            FasTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
 
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     FasTextView.setTextColor(Color.GREEN);
                                 }else{
@@ -221,11 +273,19 @@ public class MainActivity extends AppCompatActivity {
 
                         boolean tech_correct = file.getName().equals("Technology_Results");
                         if (tech_correct){
+
+                            Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
+                            // As part of the sentiment analysis there is a large bias towards negative sentiment. (This may be because negative statments have more words).
+                            // That being the case, positive sengtiments have double the value.
+                            amount_Positive = amount_Positive * 2;
+                            if (amount_Positive > 100) {
+                                amount_Positive = 100;
+                            }
+
                             TextView TechTextView = (TextView)findViewById(R.id.tech_TV);
-                            TechTextView.setText(text.toString().replace("\n","")+"/100");
+                            TechTextView.setText(amount_Positive.toString().replace("\n","")+"/100");
 
                             try{
-                                Integer amount_Positive =  Integer.parseInt(String.valueOf(text.toString().replace("\n","")));
                                 if (amount_Positive >= 50){
                                     TechTextView.setTextColor(Color.GREEN);
                                 }else{
