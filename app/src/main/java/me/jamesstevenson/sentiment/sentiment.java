@@ -1,4 +1,4 @@
-package me.jamesstevenson.recyclerview;
+package me.jamesstevenson.sentiment;
 
 public class sentiment {
     private String name, score, date;

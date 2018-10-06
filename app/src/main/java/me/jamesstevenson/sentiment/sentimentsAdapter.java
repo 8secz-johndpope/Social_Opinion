@@ -1,7 +1,7 @@
 // Almost all of the code i've used for the recycler view was found at: https://www.androidhive.info/2016/01/android-working-with-recycler-view/
 
 
-package me.jamesstevenson.recyclerview;
+package me.jamesstevenson.sentiment;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
+
+import me.jamesstevenson.sentiment.R;
 
 public class sentimentsAdapter extends RecyclerView.Adapter<sentimentsAdapter.MyViewHolder> {
 
@@ -47,8 +49,11 @@ public class sentimentsAdapter extends RecyclerView.Adapter<sentimentsAdapter.My
         holder.date.setText(sentiment.getDate());
     }
 
+
     @Override
     public int getItemCount() {
         return sentimentsList.size();
     }
+
 }
+
