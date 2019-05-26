@@ -5,3 +5,5 @@ The ‘Social Opinion’ app pulls data from an AWS S3 bucket that has been crea
 
 ![An image of the app.](https://lh3.googleusercontent.com/S1verqiNKsEt2_uhzRrUOLOrWz_32CMgUT6kC77gkGrFvH5V4mljccmZvlIsnclmmFY=w1536-h759-rw)
 ![An image of the app.](https://lh3.googleusercontent.com/vBw_2f3VT6QfiqZLMVl9GAUO4el3syh5rZqTen2UTCsmkFcwFmISRZTaxZKPwGM96Y9r=w1536-h759-rw)
+
+## UPDATE: The server running the Python backend has been shutdown and so this code will nolonger pull up to date versions of the data
